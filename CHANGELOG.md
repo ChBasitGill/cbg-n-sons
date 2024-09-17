@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.3](https://github.com/ChBasitGill/cbg-n-sons/compare/v0.0.2...v0.0.3) (2024-09-17)
+
+
+### Features
+
+* bootstrap theme ([77abf6e](https://github.com/ChBasitGill/cbg-n-sons/commit/77abf6eb940f45893660ba52e5551fa0cd8f4455))
+
 ### 0.0.2 (2024-09-17)
 
 
