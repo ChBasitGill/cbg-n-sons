@@ -3,44 +3,38 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "cbg-n-sons": {
+    "portfolio": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
           "style": "scss"
         }
       },
-      "root": "",
-      "sourceRoot": "src",
-      "prefix": "app",
+      "root": "projects/portfolio",
+      "sourceRoot": "projects/portfolio/src",
+      "prefix": "cbg",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/cbg-n-sons",
-            "index": "src/index.html",
-            "browser": "src/main.ts",
+            "outputPath": "dist/portfolio",
+            "index": "projects/portfolio/src/index.html",
+            "browser": "projects/portfolio/src/main.ts",
             "polyfills": [
               "zone.js"
             ],
-            "tsConfig": "tsconfig.app.json",
+            "tsConfig": "projects/portfolio/tsconfig.app.json",
             "inlineStyleLanguage": "scss",
             "assets": [
               {
                 "glob": "**/*",
-                "input": "public"
+                "input": "projects/portfolio/public"
               }
             ],
             "styles": [
-              "node_modules/bootstrap-scss/bootstrap.scss",
-              "node_modules/bootswatch/dist/sketchy/bootstrap.css",
-              "node_modules/bootstrap-icons/font/bootstrap-icons.scss",
-              "src/scss/styles.scss"
+              "projects/portfolio/src/styles.scss"
             ],
-            "scripts": [
-              "node_modules/@popperjs/core/dist/umd/popper-base.min.js",
-              "node_modules/bootstrap/dist/js/bootstrap.min.js"
-            ]
+            "scripts": []
           },
           "configurations": {
             "production": {
@@ -70,10 +64,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "cbg-n-sons:build:production"
+              "buildTarget": "portfolio:build:production"
             },
             "development": {
-              "buildTarget": "cbg-n-sons:build:development"
+              "buildTarget": "portfolio:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -88,36 +82,24 @@
               "zone.js",
               "zone.js/testing"
             ],
-            "tsConfig": "tsconfig.spec.json",
+            "tsConfig": "projects/portfolio/tsconfig.spec.json",
             "inlineStyleLanguage": "scss",
             "assets": [
               {
                 "glob": "**/*",
-                "input": "public"
+                "input": "projects/portfolio/public"
               }
             ],
             "styles": [
-              "src/styles.scss"
+              "projects/portfolio/src/styles.scss"
             ],
             "scripts": []
-          }
-        },
-        "lint": {
-          "builder": "@angular-eslint/builder:lint",
-          "options": {
-            "lintFilePatterns": [
-              "src/**/*.ts",
-              "src/**/*.html"
-            ]
           }
         }
       }
     }
   },
   "cli": {
-    "analytics": false,
-    "schematicCollections": [
-      "@angular-eslint/schematics"
-    ]
+    "analytics": false
   }
 }
