@@ -98,10 +98,7 @@
           "projects/portfolio/**/*.html"
         ],
         "eslintConfig": "projects/portfolio/eslint.config.js"
-      },
-      "outputs": [
-        "{options.outputFile}"
-      ]
+      }
     }
   }
 }
