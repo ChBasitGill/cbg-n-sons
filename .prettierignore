@@ -1,0 +1,48 @@
+# Ignore artifacts and dependencies
+node_modules/
+dist/
+build/
+coverage/
+*.log
+
+# Ignore environment files
+src/environments/
+
+# Ignore generated files
+**/*.generated.ts
+**/*.gen.ts
+
+# Ignore compiled output
+out/
+*.d.ts
+
+# Ignore Angular cache and temporary files
+.angular/
+.tmp/
+
+# Ignore JSON files if they don't require formatting
+**/*.json
+
+# Ignore minified files
+*.min.js
+*.min.css
+
+# Ignore assets (e.g., images, fonts, etc.)
+src/assets/
+src/**/*.svg
+src/**/*.png
+src/**/*.jpg
+src/**/*.jpeg
+src/**/*.gif
+src/**/*.woff
+src/**/*.woff2
+src/**/*.ttf
+src/**/*.eot
+
+# Ignore IDE or editor config files
+.vscode/
+.idea/
+*.iml
+
+# Ignore API documentation output
+docs/
